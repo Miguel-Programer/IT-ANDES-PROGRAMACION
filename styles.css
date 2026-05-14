@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+.tarjeta1{
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #000;
+}
+
+.tarjeta1 h2{
+    display: flex;
+    justify-content: center;
+}
+
+.dinosaurio1 img{
+    height:200px;
+    width: 200px;
+}
+
+.dinosaurio2 img{
+    height:200px;
+    width: 200px;
+}
+
+.dinosaurio3 img{
+    height:200px;
+    width: 200px;
+}
+
+.dinosaurio4 img{
+    height:200px;
+    width: 200px;
+}
+
+.dinosaurio5 img{
+    height:200px;
+    width: 200px;
+}
+
+.dinosaurio6 img{
+    height:200px;
+    width: 200px;
+}
