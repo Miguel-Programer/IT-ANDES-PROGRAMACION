@@ -16,6 +16,11 @@
     justify-content: center;
 }
 
+.ContenedorDinosaurios{
+    display: flex;
+    flex-direction:row;
+}
+
 .dinosaurio1 img{
     height:200px;
     width: 200px;
