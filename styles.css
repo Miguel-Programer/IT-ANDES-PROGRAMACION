@@ -2,51 +2,159 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #1a1a2e;
+}
+
 .tarjeta1{
-    background-color: #f2f2f2;
+    background-color: #16213e;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
+    padding: 70px;
     margin: 20px;
     border: 2px solid #000;
+    border: 2px solid #2f437c;
 }
 
 .tarjeta1 h2{
     display: flex;
     justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(175, 0, 0);
+    font-size: 50px;
+    margin: auto;
+}
+
+.tarjeta1 p{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin: auto;
 }
 
 .ContenedorDinosaurios{
     display: flex;
-    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.dinosaurio1 img{
-    height:200px;
-    width: 200px;
+
+/*TARJETA DE DINOSAURIO
+Box Model: padding, border, border-radius.
+Flexbox: layout vertical con espacio entre elementos.
+Tipografía: títulos con fuente llamativa, texto con fuente legible.
+Colores: fondo oscuro, texto claro, acentos en botones.*/
+.dinosaurio1,
+.dinosaurio2,
+.dinosaurio3,
+.dinosaurio4,
+.dinosaurio5,
+.dinosaurio6{
+    width: 29%;
+    border: 2px solid black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #16213e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 70px;
+    margin: 20px;
+    border: 2px solid #000;
+    border: 2px solid #2f437c;
+    transition: 0.3s;   /* Transición suave para el efecto hover */
 }
 
-.dinosaurio2 img{
-    height:200px;
-    width: 200px;
+.dinosaurio1 h3,
+.dinosaurio2 h3,
+.dinosaurio3 h3,
+.dinosaurio4 h3,
+.dinosaurio5 h3,
+.dinosaurio6 h3{
+    color: rgb(175, 0, 0);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    margin: auto;
 }
 
-.dinosaurio3 img{
-    height:200px;
-    width: 200px;
+.dinosaurio1 p,
+.dinosaurio2 p,
+.dinosaurio3 p,
+.dinosaurio4 p,
+.dinosaurio5 p,
+.dinosaurio6 p{
+    color: white;
 }
 
-.dinosaurio4 img{
-    height:200px;
-    width: 200px;
+img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid #2f437c;
 }
 
-.dinosaurio5 img{
-    height:200px;
-    width: 200px;
+/*ESTILOS DE LA TARJETA DE DINOSAURIO*/
+button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 28px;          /* Padding interno del botón */
+    background-color: transparent;
+    color: rgb(175, 0, 0);
+    border: 2px solid rgb(175, 0, 0);
+    border-radius: 50px;         /* Border-radius muy alto: forma píldora */
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    cursor: pointer;
 }
 
-.dinosaurio6 img{
-    height:200px;
-    width: 200px;
+/* :hover en el botón*/
+button:hover{
+    background-color: rgb(175, 0, 0);
+    color: white;
+}
+
+.dinosaurio1:hover,
+.dinosaurio2:hover,
+.dinosaurio3:hover,
+.dinosaurio4:hover,
+.dinosaurio5:hover,
+.dinosaurio6:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px rgb(175, 0, 0);
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 768px){  
+    .dinosaurio1,
+    .dinosaurio2,
+    .dinosaurio3,
+    .dinosaurio4,
+    .dinosaurio5,
+    .dinosaurio6{
+        width: 90%;
+    }
+
+    .tarjeta1{
+        padding: 30px;
+    }
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (max-width: 1024px){   
+
+    .dinosaurio1,
+    .dinosaurio2,
+    .dinosaurio3,
+    .dinosaurio4,
+    .dinosaurio5,
+    .dinosaurio6{
+        width: 45%;
+    }
 }
